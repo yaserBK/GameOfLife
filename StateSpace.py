@@ -143,21 +143,22 @@ class StateSpace:
         
         self.state_space = fresh_space
         print(self.render())
-        time.sleep(.001)
+        time.sleep(.2)
         cls()
 
     def render(self):
         render_string = ""
         for i in self.state_space:
-            render_string += "  " 
+            render_string += " || " 
             for j in i:
                 if j == 1:
                     render_string += "[.]"
                 else:
-                    render_string += "  "
-            render_string += " \n"
+                    render_string += "   "
+            render_string += " ||\n"
         return render_string
 
 def cls() -> None:
     # clears screen - handy for "flipbooking" the output. 
     os.system('cls' if os.name=='nt' else 'clear')
+
