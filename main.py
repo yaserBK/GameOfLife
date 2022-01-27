@@ -1,10 +1,13 @@
 from StateSpace import StateSpace
 
+
+# Grid dimensions
+width = 40
+height = 60
+
 def main():
-    # world = StateSpace(len(user_state[0]), len(user_state), "user")
-    # world.state_space = user_state
-    world = StateSpace(40,60)
+    world = StateSpace(width, height)
     world.run(40000)
-    #  # printing neighborhood to output for sake of testing        
+
 if __name__ =="__main__":
     main()
