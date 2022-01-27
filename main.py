@@ -1,12 +1,12 @@
 from StateSpace import StateSpace
 
 
-# Grid dimensions
-width = 40
-height = 30
+# world dimensions
+width = 40 # Number of columns.
+height = 30 # Number of rows.
 
 def main():
-    # instantiating State Space with defined 
+    # instantiating State Space with defined dimensions
     world = StateSpace(width, height)
     world.run(40000)
 
